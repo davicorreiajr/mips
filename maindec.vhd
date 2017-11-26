@@ -22,7 +22,7 @@ begin
       when "000101" => controls <= "0001000011"; -- BNE
       when "001000" => controls <= "1010000000"; -- ADDI
       when "000010" => controls <= "0000001000"; -- J
-      when "001111" => controls <= "1010000110"; -- ORI
+      when "001101" => controls <= "1010000110"; -- ORI
       when others   => controls <= "----------"; -- illegal op
     end case;
   end process;
