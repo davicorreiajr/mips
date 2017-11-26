@@ -22,6 +22,7 @@ begin
       when "000100" => controls <= "000100001"; -- BEQ
       when "001000" => controls <= "101000000"; -- ADDI
       when "000010" => controls <= "000000100"; -- J
+		when "001111" => controls <= "101000011"; -- ORI
       when others   => controls <= "---------"; -- illegal op
     end case;
   end process;
